@@ -5,23 +5,6 @@
 <title>JavaScript Multiply and Divide </title>
 </head> 
 
-<body>
-<br>
-<br>
-
-<form>
-1st Number: <input type="text" id="firstNumber" /><br>
-2nd Number: <input type="text" id="secondNumber" /><br>
-Prime or Not: <input type="text" id="primeNumber" /><br>
-<input type="button" onClick="multiplyBy()" Value="Multiply" />
-<input type="button" onClick="divideBy()" Value="Divide" />
-<input type="button" onClick="primeOrNot()" Value="Prime or Not" />
-</form>
-
-<p>The result is : <br>
-<span id = "result"></span><br>
-</p>
-</body>
 <script>
   function multiplyBy()
 {
@@ -36,11 +19,24 @@ function divideBy()
 		num2 = document.getElementById("secondNumber").value;
 		document.getElementById("result").innerHTML = num1 / num2;
 }
-	
-function primeOrNot()
-{
-		num3 = document.getElementById("primeNumber").value;
-		for (let i = num1)
-}
   </script>
+	
+<body>
+<br>
+<br>
+
+<form>
+1st Number: <input type="text" id="firstNumber" /><br>
+2nd Number: <input type="text" id="secondNumber" /><br>
+
+<input type="button" onClick="multiplyBy()" Value="Multiply" />
+<input type="button" onClick="divideBy()" Value="Divide" />
+
+</form>
+
+<p>The result is : <br>
+<span id = "result"></span><br>
+</p>
+</body>
+
 </html>
